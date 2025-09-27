@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'ans_bottom.dart';
 import 'data/Qustions.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Questions extends StatefulWidget {
   const Questions({super.key});
@@ -33,9 +34,9 @@ class _QuestionsState extends State<Questions> {
           children: [
             Text(
               currentQuestion.questions,
-              style: TextStyle(fontSize: 26,
-              fontWeight: FontWeight.bold,
-              color: const Color.fromARGB(135, 204, 200, 200)
+              style:GoogleFonts.dmSerifText(fontSize: 28, 
+              color: Colors.white54,
+              //fontWeight: FontWeight.bold
               ),
               textAlign: TextAlign.center,
             ),
