@@ -38,7 +38,7 @@ class ResultScreen extends StatelessWidget {
     return SizedBox(
       width: double.infinity,
       child: Container(
-        margin: EdgeInsets.all(40),
+        margin: EdgeInsets.all(35),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
 
@@ -58,7 +58,16 @@ class ResultScreen extends StatelessWidget {
             TextButton.icon(
               onPressed: onRestart,
               icon: Icon(Icons.refresh),
-              label: Text("Restart Quiz"),
+              label: Text("Restart Quiz",
+              style: GoogleFonts.dmSerifText(fontSize: 18,
+              color: const Color.fromARGB(255, 218, 218, 218),
+              ),
+              ),
+              style: TextButton.styleFrom(
+                iconSize: 20,
+                iconColor: Color.fromARGB(210, 194, 194, 194)
+
+              ),
             ),
           ],
         ),
